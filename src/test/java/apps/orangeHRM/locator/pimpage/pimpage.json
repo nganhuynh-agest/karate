@@ -1,0 +1,8 @@
+{
+  "addEmployeeMenu": "//a[text()='Add Employee']",
+  "firstnameTextbox": "//input[@placeholder='First Name']",
+  "lastnameTextbox": "//input[@placeholder='Last Name']",
+  "employeeIDTextbox": " //label[text()='Employee Id']/parent::div/following-sibling::div/input",
+  "browseButton": "//div[@class='employee-image-wrapper']/following-sibling::button",
+  "saveButton": "//button[@type='submit']"
+}

@@ -1,0 +1,5 @@
+{
+  "usernameTextbox": "//input[@name='username']",
+  "passwordTextbox": "//input[@name='password']",
+  "loginButton": "//button[@type='submit']"
+}

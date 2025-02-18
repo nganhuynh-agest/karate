@@ -1,0 +1,6 @@
+{
+  "addEmployee": {
+    "firstname": "John",
+    "lastname": "Doe"
+  }
+}

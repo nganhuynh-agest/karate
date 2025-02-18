@@ -1,0 +1,4 @@
+{
+  "dashboardText": "//h6[text()='Dashboard']",
+  "pimSidebar": "//span[text()='PIM']"
+}
