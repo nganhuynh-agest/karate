@@ -1,0 +1,10 @@
+{
+  "timeSidebar": "//span[text()='Time']",
+  "timetextModule": "//h6[text()='Timesheets']",
+  "timesheetsMenu": "//span[text()='Timesheets ']",
+  "employeeTimesheetsDropd": "//a[text()='Employee Timesheets']",
+  "myTimesheetsDropd": "//a[text()='My Timesheets']",
+  "editButton": "//button[@type='button' and text()=' Edit ']",
+  "projectTextbox": "//div[@class='oxd-autocomplete-wrapper']//input",
+  "activityTextbox": "//div[@class='oxd-select-text-input']"
+}
