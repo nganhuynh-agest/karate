@@ -6,5 +6,12 @@
   "myTimesheetsDropd": "//a[text()='My Timesheets']",
   "editButton": "//button[@type='button' and text()=' Edit ']",
   "projectTextbox": "//div[@class='oxd-autocomplete-wrapper']//input",
-  "activityTextbox": "//div[@class='oxd-select-text-input']"
+  "projectSelect": "//span[text()='Apache Software Foundation - ASF - Phase 1']",
+  "activityTextbox": "//div[@class='oxd-select-text-input']",
+  "activitySelect": "//span[text()='Feature Development']",
+   "dayTime": "//tbody[@class='orangehrm-timesheet-table-body']//input[@class='oxd-input oxd-input--active']",
+  "saveButton": "//button[@type='submit']",
+  "successText": "//p[text()='Successfully Saved']",
+  "reportButton":"//span[@class='oxd-topbar-body-nav-tab-item' and text()='Reports ']",
+  "empReportButton": "//a[text()='Employee Reports']"
 }
