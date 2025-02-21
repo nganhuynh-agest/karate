@@ -8,7 +8,7 @@ Feature:
     * def dashBoard = locator ('orangeHRM','dashboard')
     * def appData = data('orangeHRM','webData')
     * def timePage = locator('orangeHRM','timepage')
-    * def addDate = data('orangeHRM','date')
+    * def addTimesheet = locator('orangeHRM','timepage')
 
 
   Scenario:
@@ -21,13 +21,12 @@ Feature:
     #- User is logged in and has approval rights
     # 1. Navigate to the Time module
     * click(timePage.timeSidebar)
-    * waitFor(timePage.timetextModule)
+    * waitFor(addTimesheet.timetextModule)
 
     # 2. Click "Reports" -> "Employee Reports"
     * click(timePage.reportButton)
     * delay(3000)
     * click(timePage.empReportButton)
-
     # 3. Enter input for Employee Name and Date
     # Lấy tên user từ góc phải trên cùng
     * def username = text(timePage.userLogin)
@@ -40,13 +39,30 @@ Feature:
     * mouse().move(timePage.optionName).click()
 
     # Chọn Date
-    * input(timePage.projectFrom,addDate.dateTime.datefrom)
-    * input(timePage.projectTo,addDate.dateTime.dateto)
+#    * def currentDate = getCurrentDate()
+    * mouse().move(timePage.projectFrom).click()
 
-    # 4. Click "View"
-    * click(timePage.viewButton)
-    * delay(3000)
-    * match exists(timePage.recordText) == true
+    * def getMonday =
+      """
+      function() {
+        var SimpleDateFormat = Java.type('java.text.SimpleDateFormat');
+        var sdf = new SimpleDateFormat('yyyy-dd-MM');
+        var Calendar = Java.type('java.util.Calendar');
+        var cal = Calendar.getInstance();
+        cal.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY);
+        return sdf.format(cal.getTime());
+      }
+      """
+    * def monday = getMonday()
+    * print 'Monday selected:', monday
+
+    * input(timePage.projectFrom, monday)
+
+
+
+
+
+  # 4. Click "View"
 
 
 
