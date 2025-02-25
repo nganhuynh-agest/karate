@@ -1,0 +1,17 @@
+{
+  "recruitmentSidebar":"//span[text()='Recruitment']",
+  "recruitmentText": "//span[@class='oxd-topbar-header-breadcrumb']",
+  "vacanciesMenu": "//li//a[text()='Vacancies']",
+  "addButton": "//div[@class='orangehrm-header-container']/button[@type='button']",
+  "vacanciesText": "//div[@class='orangehrm-card-container']/h6",
+  "vacancyTextbox": "//label[text()='Vacancy Name']/parent::div/following-sibling::div",
+  "jobTitleTextbox": "//div[@class='oxd-select-text-input']",
+  "jobTitleSelect": "//div[@role='listbox']//div[2]",
+  "hiringTextbox": "//div[@class='oxd-autocomplete-wrapper']",
+  "numberTextbox": "//label[text()='Number of Positions']/parent::div/following-sibling::div",
+  "saveButton": "//button[@type='submit']",
+  "jobSelect": "//div[@class='oxd-table-body']/div[1]//span",
+  "deleteButton": "//div[@class='oxd-table-body']/div[1]//i[@class='oxd-icon bi-trash']",
+  "yesButton": "//i[@class='oxd-icon bi-trash oxd-button-icon']",
+  "deletedSuccessfullyText":"//p[text()='Successfully Deleted']"
+}

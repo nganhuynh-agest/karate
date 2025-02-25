@@ -12,13 +12,12 @@ Feature:
 
 
   Scenario:
-    * driver appData.url
-    # Input username and password
-    * call orangeHRM.login
-    # Verify user is redirected to the OrangeHRM dashboard
-    * waitFor(dashBoard.dashboardText)
 
     #- User is logged in and has approval rights
+    * driver appData.url
+    * call orangeHRM.login
+#    * waitFor(dashBoard.dashboardText)
+
     # 1. Navigate to the Time module
     * click(timePage.timeSidebar)
     * waitFor(timePage.timetextModule)
@@ -40,12 +39,31 @@ Feature:
     * mouse().move(timePage.optionName).click()
 
     # Chọn Date
-    * input(timePage.projectFrom,addDate.dateTime.datefrom)
-    * input(timePage.projectTo,addDate.dateTime.dateto)
+    * def getDay =
+      """
+      function(dayOfWeek) {
+        var SimpleDateFormat = Java.type('java.text.SimpleDateFormat');
+        var sdf = new SimpleDateFormat('yyyy-MM-dd');
+        var Calendar = Java.type('java.util.Calendar');
+        var cal = Calendar.getInstance();
 
-    # 4. Click "View"
+        cal.set(Calendar.WEEK_OF_YEAR, cal.get(Calendar.WEEK_OF_YEAR)); // Giữ nguyên tuần hiện tại
+        cal.set(Calendar.DAY_OF_WEEK, dayOfWeek); // Đặt đúng thứ trong tuần
+        return sdf.format(cal.getTime());
+      }
+      """
+    * def monday = getDay(2)+ ''
+    * def friday = getDay(6)+ ''
+
+
+    * scroll(timePage.projectFrom).input(monday)
+    * delay(5000)
+    * scroll(timePage.projectTo).input(friday)
+    * delay(5000)
+
+    # 4. Click "View" - Records displayed correctly
     * click(timePage.viewButton)
-    * delay(3000)
+    * delay(5000)
     * match exists(timePage.recordText) == true
 
 

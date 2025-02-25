@@ -1,8 +1,12 @@
 {
+  "pimText": "//span[@class='oxd-topbar-header-breadcrumb']/h6[text()='PIM']",
   "addEmployeeMenu": "//a[text()='Add Employee']",
+  "addEmployeeText": "//div/h6[text()='Add Employee']",
+  "imgDefault": "//img[@class='employee-image']",
   "firstnameTextbox": "//input[@name='firstName']",
   "lastnameTextbox": "//input[@name='lastName']",
-  "employeeIDTextbox": " //label[text()='Employee Id']/parent::div/following-sibling::div/input",
+  "employeeIDTextbox": "//label[text()='Employee Id']/parent::div/following-sibling::div//input",
   "browseButton": "//div[@class='employee-image-wrapper']/following-sibling::button",
-  "saveButton": "//button[@type='submit']"
+  "saveButton": "//button[@type='submit']",
+  "successText": "//p[normalize-space()='Successfully Saved']"
 }

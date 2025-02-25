@@ -1,0 +1,6 @@
+{
+  "leaveSidebar": "//span[text()='Leave']",
+  "leaveListMenu": "//a[text()='Leave List']/parent::li",
+  "fromDateTextbox": "//label[text()='From Date']/parent::div/following-sibling::div//input",
+  "toDateTextbox": "//label[text()='To Date']/parent::div/following-sibling::div//input"
+}

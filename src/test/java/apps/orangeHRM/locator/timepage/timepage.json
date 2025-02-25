@@ -11,14 +11,14 @@
   "activitySelect": "//span[text()='Feature Development']",
    "dayTime": "//tbody[@class='orangehrm-timesheet-table-body']//input[@class='oxd-input oxd-input--active']",
   "saveButton": "//button[@type='submit']",
-  "successText": "//p[text()='Successfully Saved']",
+  "successText": "//p[normalize-space()='Successfully Saved']",
   "reportButton":"//span[@class='oxd-topbar-body-nav-tab-item' and text()='Reports ']",
   "empReportButton": "//a[text()='Employee Reports']",
   "employeeNameTextbox": "//label[text()='Employee Name']/parent::div/following-sibling::div",
   "userLogin": "//p[@class='oxd-userdropdown-name']",
   "optionName": "//div[@class='oxd-autocomplete-option']",
-  "projectFrom": "//input[@class='oxd-input oxd-input--active' and @placeholder='From']",
-  "projectTo": "//input[@class='oxd-input oxd-input--active' and @placeholder='To']",
+  "projectFrom": "//div[@class='oxd-date-input']//input[@placeholder='From']",
+  "projectTo": "//div[@class='oxd-date-input']//input[@placeholder='To']",
   "viewButton": "//button[@type='submit']",
-  "recordText": "//span[text()='(1) Record Found']"
+  "recordText": "//span[text()='No Records Found']"
 }
