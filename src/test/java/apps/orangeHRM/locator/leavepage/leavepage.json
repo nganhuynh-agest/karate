@@ -2,5 +2,15 @@
   "leaveSidebar": "//span[text()='Leave']",
   "leaveListMenu": "//a[text()='Leave List']/parent::li",
   "fromDateTextbox": "//label[text()='From Date']/parent::div/following-sibling::div//input",
-  "toDateTextbox": "//label[text()='To Date']/parent::div/following-sibling::div//input"
+  "yearFromDateSelect": "//div[@class='oxd-calendar-selector-year-selected']",
+  "monthSelect": "//div[@class='oxd-calendar-selector-month-selected']",
+  "toDateTextbox": "//label[text()='To Date']/parent::div/following-sibling::div//input",
+  "setValueMonth": "//li[text()='%s']",
+  "setValueDay":"//div[normalize-space()='%s']",
+
+  "showLeaveSelect": "//label[@class='oxd-label oxd-input-field-required']/ancestor::div[@class='oxd-input-group oxd-input-field-bottom-space']//div[@class='oxd-select-text-input']",
+  "optionLeave": "//div[@class='oxd-select-option']//span[text()='%s']",
+  "optionSelect": "//span[text()='%s']",
+  "searchButton": "//button[@type='submit']",
+  "recordsDisplayed": "//span[text()='(1) Record Found']"
 }

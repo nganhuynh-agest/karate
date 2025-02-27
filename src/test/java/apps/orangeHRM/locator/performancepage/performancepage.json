@@ -1,0 +1,9 @@
+{
+  "performanceSidebar": "//span[text()='Performance']",
+  "manageMenu": "//span[@class='oxd-topbar-body-nav-tab-item' and text()='Manage Reviews ']",
+  "manageList": "//a[text()='Manage Reviews']",
+  "addButton": "//i[@class='oxd-icon bi-plus oxd-button-icon']",
+  "userLogin": "//p[@class='oxd-userdropdown-name']",
+  "employeeNameTextbox": "//label[text()='Employee Name']/parent::div/following-sibling::div",
+  "optionName": "//div[@class='oxd-autocomplete-option']"
+}
