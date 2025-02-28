@@ -5,5 +5,18 @@
   "addButton": "//i[@class='oxd-icon bi-plus oxd-button-icon']",
   "userLogin": "//p[@class='oxd-userdropdown-name']",
   "employeeNameTextbox": "//label[text()='Employee Name']/parent::div/following-sibling::div",
-  "optionName": "//div[@class='oxd-autocomplete-option']"
+  "optionName": "//div[@class='oxd-autocomplete-option']",
+  "supervisorTextbox": "//label[text()='Supervisor Reviewer']/parent::div/following-sibling::div",
+
+  "startDateTextbox":"//label[text()='Review Period Start Date']/parent::div/following-sibling::div",
+  "endDateTextbox": "//label[text()='Review Period End Date']/parent::div/following-sibling::div",
+  "dueDateTextbox": "//label[text()='Due Date']/parent::div/following-sibling::div",
+
+  "yearSelect": "//div[@class='oxd-calendar-selector-year-selected']",
+  "yearValue": "//li[normalize-space()='%s']",
+  "monthSelect": "//div[@class='oxd-calendar-selector-month-selected']",
+  "monthValue": "//li[normalize-space()='%s']",
+  "dayValue": "//div[normalize-space()='%s']",
+
+  "saveButton": "//button[@type='submit']"
 }
