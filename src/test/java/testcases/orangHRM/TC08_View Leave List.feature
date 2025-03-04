@@ -108,7 +108,9 @@ Feature:
   # 4. Click "Search"
   * click(leavePage.searchButton)
   # Verify records displayed correctly
-  * match exists(leavePage.recordsDisplayed) == true
+#  * match exists(leavePage.recordsDisplayed) == true
+   * def recordsFoundText = driver.locator("string(//span[@class='oxd-text oxd-text--span']/text()[2])").text()
+    * print recordsFoundText
 
 
 

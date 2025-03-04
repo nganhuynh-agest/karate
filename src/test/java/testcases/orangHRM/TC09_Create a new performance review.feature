@@ -22,21 +22,21 @@ Feature:
     * click(performancePage.manageList)
     * click(performancePage.addButton)
 
-#    # 3. Select the employee
-#    * def username = text(performancePage.userLogin)
-#    * def first4Chars = username.substring(0.4)
-#
-#    # Gõ tên vào ô input để gợi ý và click option name
-#    * mouse().move(performancePage.employeeNameTextbox).click()
-#    * input(performancePage.employeeNameTextbox,first4Chars)
-#    * delay(4000)
-#    * mouse().move(performancePage.optionName).click()
-#    * delay(3000)
-#
-#    # 4. Input supervisor reviewer: karate demo
-#    * mouse().move(performancePage.supervisorTextbox).click()
-#    * input(performancePage.supervisorTextbox,addPerformance.inputSupervisor.supervisortextbox)
-#    * delay(4000)
+    # 3. Select the employee
+    * def username = text(performancePage.userLogin)
+    * def first4Chars = username.substring(0.4)
+
+    # Gõ tên vào ô input để gợi ý và click option name
+    * mouse().move(performancePage.employeeNameTextbox).click()
+    * input(performancePage.employeeNameTextbox,first4Chars)
+    * delay(4000)
+    * mouse().move(performancePage.optionName).click()
+    * delay(3000)
+
+    # 4. Input supervisor reviewer: karate demo
+    * mouse().move(performancePage.supervisorTextbox).click()
+    * input(performancePage.supervisorTextbox,addPerformance.inputSupervisor.supervisortextbox)
+    * delay(4000)
 
     # 5.1 Select the review period start date
     * mouse().move(performancePage.startDateTextbox).click()

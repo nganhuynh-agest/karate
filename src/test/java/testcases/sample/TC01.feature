@@ -1,7 +1,7 @@
 Feature:
 
   Background:
-    * url 'https://jsonplaceholder.typicode.com'
+    * url 'https://apitesting4.free.beeceptor.com/api/'
     * def postPayload =
       """
       {
